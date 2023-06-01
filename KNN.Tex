@@ -1,0 +1,24 @@
+\textbf{KNN (K-Nearest Neighbors)} est un algorithme de classification populaire utilisé en apprentissage automatique et en analyse de données.\\
+L'objectif de KNN est de prédire la classe d'une observation donnée en fonction de la classe des échantillons les plus proches dans un ensemble de données d'entraînement.
+
+L'algorithme KNN utilise la distance euclidienne pour mesurer la similitude entre les observations. La distance euclidienne est calculée comme la racine carrée de 
+la somme des carrés des différences entre chaque paire de variables dans deux observations. Par exemple, si nous avons deux observations, x1 et x2, 
+chacune ayant deux variables, x1 = (a1, b1) et x2 = (a2, b2), la distance euclidienne entre x1 et x2 est calculée comme suit :
+
+\begin{equation}
+distance(x_1, x_2) = \sqrt{(a_1 - a_2)^2 + (b_1 - b_2)^2}
+\end{equation}
+
+où $x_1$ et $x_2$ sont des points dans un plan cartésien avec des coordonnées $(a_1, b_1)$ et $(a_2, b_2)$ respectivement.
+
+Une fois que la distance euclidienne est calculée pour toutes les observations dans l'ensemble de données d'entraînement, l'algorithme KNN sélectionne les 
+
+k observations les plus proches de l'observation de test en fonction de leur distance euclidienne. La valeur de k est un paramètre que nous définissons, 
+et elle détermine le nombre d'observations que nous utilisons pour prédire la classe de l'observation de test.
+
+Ensuite, l'algorithme KNN examine la classe majoritaire parmi les k observations les plus proches et prédit cette classe comme la classe de l'observation de test.\\
+Si k = 1, cela signifie que nous ne sélectionnons qu'une seule observation la plus proche et prédisons sa classe comme la classe de l'observation de test.
+
+Il est important de noter que l'algorithme KNN est sensible à l'échelle des variables dans l'ensemble de données. Si une variable a une plage de valeurs beaucoup plus grande que les autres variables, elle aura un impact disproportionné sur la distance euclidienne. Par conséquent, il est important de normaliser les variables avant d'utiliser l'algorithme KNN.
+
+Enfin, il convient de noter que l'algorithme KNN peut être utilisé pour la classification binaire et multiclasse, ainsi que pour la régression.

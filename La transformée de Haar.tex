@@ -1,0 +1,12 @@
+\textbf{La transformée de Haar} est une technique de compression de données utilisée en traitement du signal, en traitement d'images et en statistique. Elle est particulièrement utilisée pour réduire la taille des images ou des signaux tout en préservant les informations les plus importantes. Elle est également utilisée dans la compression d'images JPEG2000.
+
+La transformée de Haar est une transformation en ondelettes discrète qui décompose une image en une série de coefficients de détail et de coefficients d'approximation à différents niveaux de résolution spatiale.
+La décomposition est effectuée en utilisant des filtres passe-bas et passe-haut, appelés filtres Haar.
+
+La transformée de Haar fonctionne en deux étapes. La première étape consiste à appliquer un filtre passe-bas et un filtre passe-haut à chaque ligne de l'image. Les coefficients de détail représentent les différences entre les coefficients filtrés passe-bas et passe-haut. Les coefficients d'approximation représentent la moyenne de ces coefficients.
+
+La deuxième étape consiste à appliquer les mêmes filtres à chaque colonne de l'image, cette fois sur les coefficients de l'étape précédente. Cette étape crée une nouvelle série de coefficients de détail et de coefficients d'approximation à un niveau de résolution spatiale inférieur. Cette étape peut être répétée plusieurs fois pour obtenir des niveaux de résolution spatiale encore plus bas.
+
+La transformée de Haar est réversible, ce qui signifie que l'image peut être reconstruite à partir des coefficients de détail et d'approximation. Cela permet de compresser l'image en ne stockant que les coefficients les plus importants et en éliminant les coefficients les moins importants.
+
+La transformée de Haar présente plusieurs avantages par rapport à d'autres méthodes de compression d'images, notamment une grande rapidité d'exécution et une faible complexité algorithmique. Elle est également relativement simple à implémenter et nécessite peu de mémoire. Cependant, elle peut être moins efficace que d'autres méthodes de compression pour certains types d'images.
