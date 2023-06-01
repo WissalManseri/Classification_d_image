@@ -1,0 +1,15 @@
+\textbf{Steps :} 
+\begin{enumerate}
+\item Load training and test images from image files.
+\item Convert images to grayscale.
+\item Apply the Haar wavelet transform to the training images.
+\item Select the most significant wavelet coefficients using a threshold based on the maximum wavelet coefficient value.
+\item Reconstruct the image from the filtered coefficients to obtain a filtered version of the drive image.
+\item Extract the shape characteristics from the filtered image using the regionprops function. The extracted characteristics are the area and perimeter of the regions of interest (the shapes in the image).
+\item Record the characteristics in a data matrix.
+\item Apply the same filtering and feature extraction procedure on the test images.
+\item Perform a KNN classification using the corresponding training data and class labels (1 for round shapes, 2 for square shapes).
+\item Predict the class labels of the test images using the trained KNN model.
+\item Display test images with predicted labels.
+
+\end{enumerate}
